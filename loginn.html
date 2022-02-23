@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="user.ico">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(135deg,#4FB99F, #ED553B);
+        }
+        .ana{
+            width: 40%;
+            height: 70%;
+            background-color: #c6fff7;
+            border-radius: 30px;
+            position: relative;
+            
+        }
+        .icon{
+            width: 20%;
+            height: 20%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50px, -10px);
+            border-radius: 50%;
+        }
+        .icon>i{
+            font-size: 37px;
+            color: #3f1704;
+        }
+        .usern{
+            width: 80%;
+            height: 30px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #93ffcd;
+            border-radius: 10px;
+        }
+        input{
+            height: 30px;
+            width: 80%;
+            border: none;
+            background-color: #93ffcd;
+            
+        }
+        input:focus{
+            outline: none;
+        }
+        .usern>i{
+            font-size: 17px;
+            text-align: center;
+            margin-top: -4px;
+            margin-left: 3px;
+            color: white;
+        }
+        .passward{
+            width: 80%;
+            height: 30px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #93ffcd;
+            border-radius: 10px;
+            
+        }
+        .passward>i{
+            font-size: 17px;
+            text-align: center;
+            margin-top: -4px;
+            margin-left: 3px;
+            color: white;
+        }
+        .login{
+            width: 85px;
+            height: 30px;
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            transform: translateX(-30%);
+            border: none;
+            background-color: #87b1e5;
+        }
+        .singup{
+            width: 85px;
+            height: 30px;
+            position: absolute;
+            top: 60%;
+            left: 60%;
+            transform: translate(-30%);
+            border: none;
+            background-color: #87b1e5;
+        }
+    </style>
+</head>
+<body>
+    <div class="ana">
+        <div class="icon">
+            <i class="fa-solid fa-users"></i>
+            
+        </div>
+        <div class="usern">
+            <i class="fa-solid fa-user-large"></i>
+            <input type="text" placeholder="User name">
+        </div>
+        <div class="passward">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="login">Login</button>
+        <button class="singup">Sing Up</button>
+    </div>
+</body>
+</html>
